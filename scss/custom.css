@@ -12025,14 +12025,21 @@ h6, .h6 {
 .navbar .navbar-nav .nav-link:hover {
   color: #A04ADD;
 }
-.navbar .btn {
+.navbar .btn-secondary {
+  background-color: #3B53C7;
   color: #f2f2f2;
-  background-color: transparent;
-  border-color: #f2f2f2;
+  border: none;
 }
-.navbar .btn:hover {
-  color: #A04ADD;
-  border-color: #A04ADD;
+.navbar .btn-secondary:hover {
+  background-color: #2e42a1;
+}
+.navbar .btn-primary {
+  background-color: #A04ADD;
+  color: #f2f2f2;
+  border: none;
+}
+.navbar .btn-primary:hover {
+  background-color: #8827cd;
 }
 
 .hero {
@@ -12049,14 +12056,21 @@ h6, .h6 {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
-.hero .btn.btn-primary {
+.hero .btn-primary {
   background-color: #A04ADD;
   color: #f2f2f2;
-  margin-right: 0.5rem;
+  border: none;
 }
-.hero .btn.btn-secondary {
+.hero .btn-primary:hover {
+  background-color: #8827cd;
+}
+.hero .btn-secondary {
   background-color: #3B53C7;
   color: #f2f2f2;
+  border: none;
+}
+.hero .btn-secondary:hover {
+  background-color: #2e42a1;
 }
 
 .theme-colors {
@@ -12077,29 +12091,53 @@ h6, .h6 {
 .theme-colors .color-box p {
   margin-bottom: 1rem;
 }
-.theme-colors .color-box .btn.btn-primary {
+.theme-colors .color-box .btn-primary {
   background-color: #A04ADD;
   color: #f2f2f2;
+  border: none;
 }
-.theme-colors .color-box .btn.btn-secondary {
+.theme-colors .color-box .btn-primary:hover {
+  background-color: #8827cd;
+}
+.theme-colors .color-box .btn-secondary {
   background-color: #3B53C7;
   color: #f2f2f2;
+  border: none;
 }
-.theme-colors .color-box .btn.btn-success {
+.theme-colors .color-box .btn-secondary:hover {
+  background-color: #2e42a1;
+}
+.theme-colors .color-box .btn-success {
   background-color: #A4D882;
   color: #181853;
+  border: none;
 }
-.theme-colors .color-box .btn.btn-info {
+.theme-colors .color-box .btn-success:hover {
+  background-color: #88cc5b;
+}
+.theme-colors .color-box .btn-info {
   background-color: #59C1EF;
   color: #181853;
+  border: none;
 }
-.theme-colors .color-box .btn.btn-warning {
+.theme-colors .color-box .btn-info:hover {
+  background-color: #2ab0eb;
+}
+.theme-colors .color-box .btn-warning {
   background-color: #FFF689;
   color: #181853;
+  border: none;
 }
-.theme-colors .color-box .btn.btn-danger {
+.theme-colors .color-box .btn-warning:hover {
+  background-color: #fff256;
+}
+.theme-colors .color-box .btn-danger {
   background-color: #E5446D;
   color: #f2f2f2;
+  border: none;
+}
+.theme-colors .color-box .btn-danger:hover {
+  background-color: #d81e4d;
 }
 
 .typography {
