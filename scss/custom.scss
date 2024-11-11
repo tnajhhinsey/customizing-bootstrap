@@ -1,32 +1,163 @@
-// Custom.scss
-// This is the file you will want to update to customize your page.
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400&display=swap');
 
-// Import Google fonts here
-
-
-
-// Include any default variable overrides here (colors, font sizes, font family, etc..)
-
-
-
-// Adjust nav link hover color here
-
-
+// Color Variables
+$primary: #A04ADD;
+$secondary: #3B53C7;
+$success: #A4D882;
+$info: #59C1EF;
+$warning: #FFF689;
+$danger: #E5446D;
+$light: #f2f2f2;
+$dark: #181853;
 
 // Typography
-// Change font family for base text
+$base-font-family: 'Source Sans 3', sans-serif;
+$heading-font-family: 'Libre Baskerville', serif;
 
+body {
+    background-color: $light;
+    font-family: $base-font-family;
+    color: $dark;
+}
 
-// Change font family for headings
+// Font sizes for headings
+$h1-size: 3.052rem;
+$h2-size: 2.441rem;
+$h3-size: 1.953rem;
+$h4-size: 1.563rem;
+$h5-size: 1.25rem;
+$h6-size: 1rem;
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+}
 
+h1 { font-size: $h1-size; }
+h2 { font-size: $h2-size; }
+h3 { font-size: $h3-size; }
+h4 { font-size: $h4-size; }
+h5 { font-size: $h5-size; }
+h6 { font-size: $h6-size; }
 
-// Change font sizes for h1-h6 using values in assignment
+// Navbar
+.navbar {
+    background-color: $dark;
+    color: $light;
 
+    .navbar-brand {
+        font-family: $heading-font-family;
+        color: $light;
+    }
 
+    .navbar-nav .nav-link {
+        color: $light;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+        &:hover {
+            color: $primary;
+        }
+    }
 
-// Add additional custom code here
+    .btn {
+        color: $light;
+        border-color: $light;
 
-// Target .navbar-brand and change font-family to use 'Libre Baskerville'.
+        &:hover {
+            color: $primary;
+            border-color: $primary;
+        }
+    }
+}
+
+// Hero Section
+.hero {
+    background-color: $light;
+    padding: 3rem 0;
+    text-align: center;
+
+    .hero-text h1 {
+        font-size: $h1-size * 1.2;
+        color: $dark;
+    }
+
+    .hero-text p {
+        color: darken($dark, 20%);
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        &.btn-primary {
+            background-color: $primary;
+            color: $light;
+            margin-right: 0.5rem;
+        }
+
+        &.btn-secondary {
+            background-color: $secondary;
+            color: $light;
+        }
+    }
+}
+
+// Theme Colors Section
+.theme-colors {
+    background-color: $dark;
+    color: $light;
+    padding: 2rem 0;
+
+    h2 {
+        font-size: $h2-size;
+        color: $light;
+        margin-bottom: 1.5rem;
+    }
+
+    .color-box {
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            &.btn-primary { background-color: $primary; color: $light; }
+            &.btn-secondary { background-color: $secondary; color: $light; }
+            &.btn-success { background-color: $success; color: $dark; }
+            &.btn-info { background-color: $info; color: $dark; }
+            &.btn-warning { background-color: $warning; color: $dark; }
+            &.btn-danger { background-color: $danger; color: $light; }
+        }
+    }
+}
+
+// Typography Section
+.typography {
+    padding: 2rem 0;
+
+    h2 {
+        font-size: $h2-size;
+        margin-bottom: 1.5rem;
+        color: $dark;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0.5rem;
+        color: $dark;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        color: darken($dark, 20%);
+    }
+}
+
+// Footer
+footer {
+    background-color: $dark;
+    color: $light;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
